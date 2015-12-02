@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
    override func viewDidLoad() {
       super.viewDidLoad()
-
       
       self.tableView.registerNib(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "CardTableViewCell")
       
@@ -57,8 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
       return cell
    }
-   
-   
-   
+
 }
 
