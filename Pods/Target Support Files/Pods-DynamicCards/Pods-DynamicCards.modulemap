@@ -1,0 +1,6 @@
+framework module Pods_DynamicCards {
+  umbrella header "Pods-DynamicCards-umbrella.h"
+
+  export *
+  module * { export * }
+}
