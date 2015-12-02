@@ -45,7 +45,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
       let cell = tableView.dequeueReusableCellWithIdentifier("CardTableViewCell", forIndexPath: indexPath) as! CardTableViewCell
       
-      cell.imageViewHeightConstraint.constant = CGFloat( random() % 300 )
+      let height: CGFloat
+      switch indexPath.row {
+      case 0: height = 350
+      case 1: height = 200
+      case 2: height = 100
+      default: height = 0
+      }
+      
+      cell.imageViewHeightConstraint.constant = height
       
       return cell
    }
